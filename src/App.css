@@ -1,0 +1,198 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+body{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+
+/* Users Form */
+
+.users-from{
+  width: 100%;
+  background: white;
+  border-radius: 0 0 30px 30px;
+  padding: 15px 0 35px;
+}
+
+.users-from form{
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.users-from h2{
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.input-name{
+  width: 90%;
+}
+
+.users-from .input-name input{
+  margin: 10px 10px 0 0;
+  width: 100%;
+  outline: none;
+}
+
+.users-from .input-container{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.users-from .input-container input, .users-from .input-container select{
+  background: rgba(0, 0, 0, .03);
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 90%;
+  outline: none;
+}
+
+.users-from .input-container label{
+  padding-right: 10px;
+  text-align: center;
+}
+
+.users-from .input-container label i{
+  font-size: 20px;
+}
+
+.button-users{
+  width: 100%;
+  display: flex;
+}
+
+.users-from .button-registre{
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  background: cornflowerblue;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+.users-from .button-clear{
+  margin: 15px 0 0 10px;
+  width: 92%;
+  padding: 10px;
+  font-size: 20px;
+  background: #F9F871;
+  border-radius: 10px;
+}
+@media (min-width: 576px) {
+  .users-from .input-name{
+      display: flex;
+  }
+  .users-from form{
+      max-width: 579px;
+  }
+}
+
+@media (min-width: 768px) {
+  .users-from form { max-width: 721px; }
+}
+
+@media (min-width: 992px) {
+  .App{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .users-from{
+    border-radius: 0;
+    width: 40%;
+    height: 100vh;
+    overflow-x: auto;
+}
+.users-from form{
+    padding: 50px;
+}
+}
+
+/*UsersList*/
+
+.users-list-container{
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.users-list .user{
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 30px 0;
+  display: flex;
+}
+
+.users-list .user .user-info{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.users-list .user .user-info .name{
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.users-list .user .user-info .email{
+  color: rgba(0, 0, 0, .6);
+  margin-bottom: 10px;
+}
+
+.users-list .user .options{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.users-list .user .options button{
+  margin: 0 10px;
+  background: #fff;
+}
+
+.users-list .user .options button i{
+  font-size: 20px;
+  color: rgba(0, 0, 0, .8);
+}
+
+@media (min-width: 576px) {
+  .users-list .name-inputs{
+      display: flex;
+  }
+  .users-list-container{
+      max-width: 579px;
+  }
+}
+
+@media (min-width: 768px) {
+  .users-list-container{ max-width: 721px; }
+  .users-list .user{
+      padding: 30px 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .users-list{
+      width: 60%;
+      padding: 30px;
+      overflow-x: auto;
+      height: 100vh;
+  }
+}
